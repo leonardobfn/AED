@@ -26,7 +26,38 @@ sd(prova_1)
 
 ### Coeficiente de variação ------------ 
 
-cv_prova_1 = (sd(prova_1)/mean(prova_1))*100
+cv_prova_1 = ( sd(prova_1)/mean(prova_1)  )*100
 
+
+### Diferença inter quartil - IQR -----------
+
+#' Forma 1
+Q1 = quantile(prova_1,probs = 0.25)
+Q3 = quantile(prova_1,probs = 0.75)
+IQR = Q3-Q1
+print(IQR)
+
+#' Forma 2
+IQR(prova_1)
+
+
+## Exemplo 2: provas dos alunos - fun describe ---------
+
+#' Descritiva usando a função describe do pacote psych
+
+#' Algumas funções já estão disponíveis no R e outras precisam baixar um pacote.
+#' Pacote é um conjunto de funções criadas por um programador e disponibilizado para 
+#' a comunidade.
+ 
+install.packages("psych") # instalando o pacote
+psych::describe(prova_2) # utilizando a função describe do pacote psych
+
+
+prova_1 <- c(7,8,9,6,8,7,10,6,7,8,7,5,10,7,8,6,6,9,10,8)
+prova_2 <- c(4,3,8,7,4,4,1,5,1,4,7,3,1,4,4,8,5,5,4,6)
+notas = data.frame(prova_1 = prova_1,
+                   prova_2 = prova_2)
+
+psych::describe(notas)
 
 

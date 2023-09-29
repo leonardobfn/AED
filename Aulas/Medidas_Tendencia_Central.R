@@ -121,23 +121,16 @@ weighted.mean(x = notas,w = pesos,na.rm = T)
 
 weighted.mean(c(5,8),c(2,1),na.rm = T)
 
+## Exemplo 4: média trimed ----------
 
-## Exercício 1 -------
+#'A média  truncada nada mais é do que a média desconsiderando algum percentil, 
+#'o que a faz útil se você quer desconsiderar os outliers
 
-#' Considere os pesos (gramas)  de 10 recém nascidos abaixo.
-#' a) Calcule a média dos dados e interprete os resultados
-#' b) Calcule Q1, Q2 e Q3 e interprete os resultados
-#' c) Obtenha os percentis de ordem 20 e 90. Interprete os resultados
+x <- c(2,2,2,10,2,2,2,2,2,1)
+mean(x,trim = 0.10,type=2) # removo 10% das observações inferiores e 10% das superiores
 
-peso <- c(4243,4241,4668,4375,4425,4312,4675,4025,4646,4644)
 
-## Exercício 2 ------- 
-
-#' Considere que as notas de um aluno foram:
-#' 5,6,8,4. Considere que cada nota tem os seguintes pesos:
-#' 1,2,3,4. Calcule a média ponderada do aluno. 
-
-## Exemplo 4------------
+## Exemplo 5------------
 
 #'Vamos considerar que as notas estão no formato "data.frame"
 #'"data.frame": maneira de organizar os dados;
@@ -163,13 +156,9 @@ colMeans(notas) #Forma 1
 apply(notas,2,mean) #Forma 2
 #apply(notas,2,mean,na.rm=T) #Forma 2 com presença de "NA"
 
-## Exercício 3----------
 
-#' Monte uma base de dados no formato "data.frame" com as seguintes características:
-#' 5 linhas 3 colunas
-#' Calcule a média das 3 colunas
 
-## Exemplo 5------------
+## Exemplo 6------------
 
 #' Suponha que as notas de duas turmas estão no formato de uma matriz
 
