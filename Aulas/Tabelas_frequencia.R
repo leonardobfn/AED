@@ -7,6 +7,12 @@
 #' "dados/tab_sexo_curso.csv" é o caminho dos dados (diretório)
 
 dados = read.csv("dados/tab_sexo_curso.csv") # carregando os dados no formato csv
+
+#' Caso tenha problema com acentuação de palavras, usar as seguintes alternativas
+
+#dados = read.csv("dados/tab_sexo_curso.csv",encoding = "ISO-859-1") # carregando os dados no formato csv
+#dados = read.csv("dados/tab_sexo_curso.csv",encoding = "UTF-8") # carregando os dados no formato csv
+
 head(dados) # visualizando as seis primeiras observações
 
 curso <- dados$curso # selecionando apenas a coluna curso
@@ -20,11 +26,6 @@ addmargins(tab2)
 
 ## Exemplo 2 duas variáveis categóricas -------------
 
-#' Considere os dados a seguir 
-
-#' "dados/tab_sexo_curso.csv" é o caminho dos dados (diretório)
-
-dados = read.csv("dados/tab_sexo_curso.csv") # carregando os dados no formato csv
 head(dados) # visualizando as seis primeiras observações
 
 # Forma 1
@@ -51,15 +52,14 @@ RcmdrMisc::rowPercents(tab1,digits = 1) # linhas
 
 # Nota importante -----------
 
-#' podemos fazer os procedimentos acima utilizar " %>% " piper
+#' podemos fazer os procedimentos acima utilizando " %>% " piper
 #' diminui a quantidade de linhas de cód
 
 # install.packages("tidyr") # instalar o pacote para usar %>%
 require(tidyr) # carregar as funções do pacote
 
-dados = read.csv("dados/tab_sexo_curso.csv") # carregando os dados no formato csv
 curso <- dados$curso # selecionando apenas a coluna curso
 
 tab1 = table(curso) %>% addmargins()
-tab2 = prop.table(tab1) %>% addmargins(tab2)
+tab2 = prop.table(tab1) %>% addmargins()
 

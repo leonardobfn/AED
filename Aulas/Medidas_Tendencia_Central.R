@@ -126,9 +126,10 @@ weighted.mean(c(5,8),c(2,1),na.rm = T)
 #'A média  truncada nada mais é do que a média desconsiderando algum percentil, 
 #'o que a faz útil se você quer desconsiderar os outliers
 
-x <- c(2,2,2,10,2,2,2,2,2,1)
-mean(x,trim = 0.10,type=2) # removo 10% das observações inferiores e 10% das superiores
-
+x <- c(2,2,2,10,2,2,2,2,2,0.001)
+mean(x)
+mean(x,trim = 1) # removo 10% das observações inferiores e 10% das superiores
+mean
 
 ## Exemplo 5------------
 

@@ -16,7 +16,7 @@ head(temp)
 #' describe
 
 #' Obtenha as estatísticas descritivas  para a variável temperatura usando as funções 
-#' apresentadas no exemplo 1
+#' apresentadas no exemplo 1 do arquivo Medidas_dispesao da pasta Aula
 
 #' Nota: observe que os dados estão organizados no formato de tabela (data.frame)
 #' Nesse caso, não podemos aplicar diretamente a função sd, por exemplo
