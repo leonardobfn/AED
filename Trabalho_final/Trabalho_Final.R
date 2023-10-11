@@ -11,7 +11,7 @@
 
 #' a) Carregar o banco de dados temp_umidade.txt (0.5)
 
-#' b) Realizar as estatísticas descriticas para cada variável. Interprete 
+#' b) Obter as estatísticas descriticas para cada variável. Interprete 
 #' Q1, Q2 e Q3 (1.0)
 
 #' c) Faça um gráfico de linha para cada variável. Coloque lado a lado usando:
