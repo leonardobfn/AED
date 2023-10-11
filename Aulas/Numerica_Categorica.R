@@ -13,15 +13,27 @@ typeof(dados$municipio)
 ## Estatísticas descritivas por municípios ------------- 
 
 #' temperatura média por município 
+
+media = tapply(dados$temperatura,dados$municipio,mean)
+media
 media <- tapply(dados$temperatura,dados$municipio,mean) 
 
 #' variância por município 
+
+vari <- tapply(dados$temperatura,dados$municipio,var)
+vari
 vari <- tapply(dados$temperatura,dados$municipio,var) 
 
 #' desvio padrão por município 
+
+dp = tapply(dados$temperatura,dados$municipio,sd)
+dp
 dp <- tapply(dados$temperatura,dados$municipio,sd) 
 
 #' quantile por município 
+
+quant <- tapply(dados$temperatura,dados$municipio, quantile,c(0.25))
+quant
 quant <- tapply(dados$temperatura,dados$municipio,quantile,c(0.25,0.5,0.75)) 
 
 #' summary por município 

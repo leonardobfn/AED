@@ -1,18 +1,23 @@
 # Trabalho final ------------
 
-#' Nome:
+
+#' Nome: 
 
 #' Observação: Atenção com o encoding na hora de carregar os dados
 
 
 #Questão 1)-------------- 
 
+#' Análise de duas variáveis numéricas
+
 #' 3,5 pontos
 
 #' a) Carregar o banco de dados temp_umidade.txt (0.5)
 
+
 #' b) Obter as estatísticas descritivas para cada variável. Interprete 
 #' Q1, Q2 e Q3 (1.0)
+
 
 #' c) Faça um gráfico de linha para cada variável. Coloque lado a lado usando:
 #' par(mfrow=c(1,2)) (1.0)
@@ -20,7 +25,9 @@
 #' d)Faça um gráfico de dispersão e calcule o coeficiente de correlação e 
 #' interprete  (1.0)
 
-#Questão 2)-------------- 
+#Questão 2)--------------  
+
+#'Análise de duas variáveis categóricas 
 
 #' 3,5 pontos
 
@@ -40,7 +47,9 @@
 #' medicamento quais as chances de sentir dores? (1.0)
 
 
-#Questão 3) ------------------- 
+#Questão 3) -------------------  
+
+#' Análise de uma variável categórica e outra numérica
 
 #' 3,0 pontos
 
